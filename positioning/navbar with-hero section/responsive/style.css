@@ -1,0 +1,225 @@
+body{
+    background-color: white;
+}
+/*Media query*/
+@media screen and (max-width: 768px) {
+    body{
+        background-color: aqua;
+        /*above 768 px change the rgb(195, 209, 209); tablet device*/
+    }
+    .navbar .navlinks {
+        font-size: 1.4rem;
+         
+        .paragraph{
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+    .navlinks li{
+            font-size: 1rem;
+        }
+        .main-content{
+            font-size: 1rem;
+        }
+    
+}
+@media screen and (max-width: 425px) {
+    body{
+        background-color: rgb(184, 184, 150);
+    }/*output colour changes depends upon colour mobile device*/
+     .navbar .navlinks {
+        font-size: 1rem;
+        } 
+        .nav-content{
+            font-size: 1rem;
+        }
+        .paragraph{
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        .navlinks li{
+            font-size: 1rem;
+        }
+
+}
+
+.navbar .nav-content{
+    position: fixed;
+     background-color: white;
+     display: flex;
+}
+.navbar .nav-content .navlinks  {
+    width: 0;
+    position:fixed;
+
+    text-align: end;
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 70%;
+    justify-content: space-evenly;
+    padding-bottom: 10%;
+}
+.navlinks:hover{
+    cursor: all-scroll;
+    color: rgb(156, 46, 142);
+
+}
+
+.image-container{
+    padding-top: 45%;
+}
+.navbar{
+    font-size: larger;
+    padding-top: 10px;
+}
+.paragraph{
+    width:50%;
+    height: 50%;
+    font-size: larger;
+}
+button{
+    background-color: rgb(89, 42, 165);
+    color: white;
+    text-decoration: none;
+    border: 2px solid;
+    font-weight: bold;
+    padding: 13px 15px;
+    border-radius: 20px;
+}
+button:hover{
+    cursor: pointer;
+}
+.skills{
+    background-color: white;
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin: auto;
+}
+.container{
+    display: flex;
+    gap: 60px;
+    animation: scroll 40s linear infinite;
+    
+}
+.card{
+    border-radius: 3cap;
+    min-height: 200px;
+    min-width: 300px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.card:nth-child(odd){
+    background: linear-gradient(-229deg, yellow,pink);
+}
+.card:nth-child(even){
+    background: linear-gradient(-229deg, pink,rgb(90, 31, 158));
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*5));
+    }
+    
+    
+}
+.box{
+    height: 100vh;
+    background-color: white;
+    font-style: outfit;
+    font-size: xx-large;
+}
+    .test{
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    align-items: center;
+    }
+.box h1{
+    color: black;
+    margin-left: 27%;
+}
+.project{
+    font-family: inherit;
+    width: 60%;
+    margin-left: 20px;
+}
+.box h5{
+    font-size: 30px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-top: -1%;
+}
+.box p{
+    line-height: 25px;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+.contact{
+    color: black;
+    background-color: white;
+    height: 100vh;
+    width:100%;
+
+}
+.contact-box{
+    display: flex;
+    background: rgb(199, 179, 179);
+    padding: 5%;
+    width: 1200px;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 30px;
+    background-color: rgb(119, 113, 113);
+    color: rgb(10, 1, 10);
+    
+}
+.contact-right{
+    flex-basis: 50%;
+    padding-top: 10px;
+    background-color: rgb(124, 39, 39);
+    color: white;
+}
+.contact h1{
+    
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.contact-left input{
+    color: blueviolet;
+}
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    display: flex;
+    flex-basis: 55%;
+    font-size: larger;
+    padding-left: 1%;
+    padding-top: 2%;
+    
+
+ 
+        
+}
+.input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.contact-right:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(17, 14, 14);
+}

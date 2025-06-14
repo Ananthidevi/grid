@@ -1,0 +1,60 @@
+.navbar{
+    position: fixed;
+    top:0;
+    /**offset not down at scrol time**/
+    left:0;
+    width:100%;
+    background-color: rgb(23, 117, 117);
+    color: white; 
+    padding: 10px;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+.navbar .container .navlinks{
+    display: flex;
+    gap:10px;
+    list-style-type: none;
+    padding: 25px;
+
+}
+.content{
+    padding-top: 130px;
+    /**space at top**/
+    font-size: x-large;
+}
+.image-container img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+     
+
+}
+.image-container{
+    position: relative;
+    width: 400px;
+    height:400px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.overlay-text{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    /*dispaly  in the content changes  depends on percentage*/
+    color:aliceblue;
+    border-radius: 10px;
+    background-color: rgb(159, 4, 170);
+    padding: 10px;
+   opacity: 0;
+    transition: opacity 0.4 ease;
+}
+.image-container:hover .overlay-text{
+    opacity: 1;
+}

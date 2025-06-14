@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 2rem;
+    /*common for whole coding padding*/
+    background-color: rgb(249, 252, 252);
+
+}
+.product-container{
+    display: flex;
+    /*supportive prop for my responsiveness*/
+     flex-wrap:wrap;
+     gap: 10px;
+    justify-content: center;
+}
+.product-card{
+    background-color: rgb(118, 78, 226);
+    padding: 15px;
+    border-radius: 8px;
+    /*Corner curved*/
+    text-align: center;
+    flex: 0 1 calc(25% - 2rem);
+    /*full  sc:100% but .product-card 33%*/
+    /* 0 1 is starting to end*/
+    /* space b/w four side for screen sixe =1rem* static setup*/
+
+}
+/*media core at last is the css rules*/
+/*Tablet device per line 2 product only*/
+@media screen and (max-width: 768px){
+    .product-card{
+        flex: 0 1 calc(35% - 1rem);
+    }
+}
+@media screen and (max-width: 425px){
+    .product-card{
+        flex: 0 1 100%;
+    }
+    /*1 product card per row using 100%*/
+}
+
+
+
+
+
+

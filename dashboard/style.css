@@ -1,0 +1,35 @@
+.grid-container{
+    font-style: outfit;
+  font-size:xx-large;
+  display:grid;
+  grid-template-areas: 
+
+  "header header "
+  "sidebar content"
+   /**2fr    1fr**/
+  "footer footer"
+  
+  ;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100px 1fr 50px;
+                       /*H       F*/
+  gap: 10px;
+  padding: 10px;
+  height:100vh;
+  
+}
+.item{
+    background-color: rgb(112, 168, 168);
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+.header{
+    grid-area: header;
+}
+.footer{
+    grid-area:footer;
+}
